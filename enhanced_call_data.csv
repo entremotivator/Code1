@@ -1,0 +1,570 @@
+call_id,customer_name,voice_agent_name,call_date,call_start_time,call_end_time,call_duration_seconds,call_duration_hms,cost,call_success,appointment_scheduled,intent_detected,sentiment_score,confidence_score,keyword_tags,summary_word_count,transcript,summary,action_items,call_recording_url,customer_satisfaction,resolution_time_seconds,escalation_required,language_detected,emotion_detected,speech_rate_wpm,silence_percentage,interruption_count,ai_accuracy_score,follow_up_required,customer_tier,call_complexity,agent_performance_score,call_outcome,revenue_impact,lead_quality_score,conversion_probability,next_best_action,customer_lifetime_value,call_category
+CALL_001,Sarah Johnson,AI Agent Emma,2024-01-15,09:15:00,09:17:00,120,00:02:00,4.90,Yes,Yes,Product_Inquiry,0.8,0.92,"software, marketing, demo, enterprise",32,"Agent: Good morning! This is Emma from TechSolutions. How can I help you today?
+
+Customer: Hi Emma, I'm Sarah Johnson from Marketing Plus Agency. We're looking for software solutions to streamline our marketing operations. Can you tell me about your Enterprise Suite?
+
+Agent: Absolutely, Sarah! Our Enterprise Suite is perfect for marketing agencies. It includes campaign management, client reporting, and automation tools. The suite can handle multiple client accounts and provides real-time analytics.
+
+Customer: That sounds exactly what we need. We manage about 50 client campaigns monthly. Can the system handle that volume?
+
+Agent: Definitely! Our Enterprise Suite is designed for high-volume operations. Many agencies manage 100+ campaigns without issues. Would you like to schedule a personalized demo to see how it works with your specific needs?
+
+Customer: Yes, that would be great. When can we do that?
+
+Agent: I can schedule you for this Thursday at 2 PM. I'll send you a calendar invite with the demo link. Is your email sarah@marketingplus.com?
+
+Customer: Perfect, yes that's correct. I'm really excited to see this in action.
+
+Agent: Wonderful! You'll receive the invite within the hour. Is there anything else I can help you with today?
+
+Customer: No, that covers everything. Thank you so much, Emma!
+
+Agent: You're welcome, Sarah! Looking forward to our demo on Thursday. Have a great day!","Customer inquiry about software solutions for marketing agency. Successfully scheduled demo for Thursday 2 PM. Customer showed high interest in Enterprise Suite and confirmed ability to handle 50+ campaigns monthly. Strong conversion potential.","Schedule demo for Thursday 2 PM and send calendar invite to sarah@marketingplus.com",https://recordings.techsolutions.com/call_001.mp3,9.2,105,No,English,Excited,145,8.5,2,0.94,Yes,Premium,Medium,9.1,Demo_Scheduled,5000,8.7,0.85,Send_Demo_Materials,25000,Sales
+CALL_002,Mike Chen,AI Agent Alex,2024-01-15,10:30:00,10:33:00,180,00:03:00,9.60,Yes,No,Technical_Support,0.9,0.88,"login, password, reset, account",28,"Agent: Hello! This is Alex from TechSolutions support. I see you're having login issues. How can I assist you?
+
+Customer: Hi Alex, yes I'm Mike Chen. I can't log into my account. I keep getting an error message saying my password is incorrect, but I'm sure I'm entering it right.
+
+Agent: I understand how frustrating that can be, Mike. Let me help you resolve this. Can you confirm the email address associated with your account?
+
+Customer: It's mike.chen@dataflow.com
+
+Agent: Thank you. I can see your account here. It looks like there might be a temporary lock due to multiple login attempts. Let me reset that for you and send you a password reset link.
+
+Customer: Oh, that makes sense. I did try logging in several times yesterday.
+
+Agent: No worries, that's completely normal. I've unlocked your account and sent a password reset email to mike.chen@dataflow.com. You should receive it within 2-3 minutes.
+
+Customer: Great! Should I create a new password right away?
+
+Agent: Yes, I recommend doing it now while we're on the call. Once you reset it, try logging in and let me know if you encounter any issues.
+
+Customer: Perfect, I just got the email. Let me reset it now... Okay, done! Let me try logging in... Yes! It works perfectly now.
+
+Agent: Excellent! Your account is fully functional now. Is there anything else I can help you with today?
+
+Customer: No, that's all. Thank you so much for the quick help, Alex!
+
+Agent: You're very welcome, Mike! Don't hesitate to reach out if you need any assistance in the future.","Customer support call for login issues. Successfully resolved password reset problem after account was temporarily locked due to multiple failed attempts. Customer able to access account immediately after reset. Excellent customer service experience.","Reset password and verify account access for mike.chen@dataflow.com",https://recordings.techsolutions.com/call_002.mp3,9.5,165,No,English,Relieved,138,12.3,1,0.91,No,Standard,Low,9.3,Issue_Resolved,0,7.2,0.0,Account_Monitoring,12000,Support
+CALL_003,Emma Davis,AI Agent Sophia,2024-01-15,11:45:00,11:46:00,60,00:01:00,1.80,Yes,No,Billing_Inquiry,0.7,0.85,"billing, premium, charges, auto-upgrade",25,"Agent: Hi! This is Sophia from TechSolutions billing department. How can I help you today?
+
+Customer: Hi Sophia, I'm Emma Davis. I noticed some premium feature charges on my account that I didn't authorize. Can you explain what happened?
+
+Agent: Of course, Emma. Let me look at your account right away. I can see you're on our Standard plan, and there were some premium feature charges last month. It appears our auto-upgrade feature was enabled.
+
+Customer: Auto-upgrade? I don't remember setting that up.
+
+Agent: I understand your concern. Sometimes this gets enabled during the initial setup process. The good news is I can disable this feature immediately and review these charges for you.
+
+Customer: Yes, please disable it. I want to control when I upgrade features.
+
+Agent: Done! I've disabled auto-upgrades on your account. You'll now need to manually approve any feature upgrades. Regarding the charges, I can see they were for advanced reporting features used last month.
+
+Customer: I did use some advanced reports, but I thought they were part of my plan.
+
+Agent: I understand the confusion. I've added a note to your account about this situation. Going forward, you'll get a clear notification before any premium features are charged.
+
+Customer: That's perfect. Thank you for resolving this so quickly.
+
+Agent: You're welcome, Emma! Is there anything else I can help you with today?
+
+Customer: No, that covers everything. Thanks again!","Billing inquiry about premium feature charges. Customer was unaware of auto-upgrade feature that was enabled during setup. Successfully disabled auto-upgrades per customer request and added account notes for future reference. Customer satisfied with resolution.","Disable auto-upgrades for account TC-789456 and add billing notification preferences",https://recordings.techsolutions.com/call_003.mp3,8.1,55,No,English,Concerned,152,15.2,0,0.87,No,Standard,Low,8.5,Issue_Resolved,0,6.8,0.0,Billing_Review,8500,Billing
+CALL_004,David Wilson,AI Agent Marcus,2024-01-15,14:20:00,14:23:30,210,00:03:30,13.50,Yes,Yes,Sales_Inquiry,0.95,0.93,"enterprise, manufacturing, 200 employees, trial",35,"Agent: Good afternoon! This is Marcus from TechSolutions enterprise sales. Thank you for your interest in our solutions. How can I help you today?
+
+Customer: Hi Marcus, I'm David Wilson, CTO at Wilson Manufacturing. We're a 200-employee company looking for a comprehensive communication and collaboration platform.
+
+Agent: Excellent! Our Enterprise Communication Suite is perfect for manufacturing companies your size. It includes team messaging, video conferencing, project management, and integration with manufacturing systems.
+
+Customer: That sounds promising. We currently use multiple tools and it's becoming inefficient. Can your platform integrate with our existing ERP system?
+
+Agent: Absolutely! We have pre-built integrations with major ERP systems including SAP, Oracle, and Microsoft Dynamics. We can also create custom integrations if needed. What ERP system are you currently using?
+
+Customer: We're on SAP. Integration is crucial for us because our production schedules and inventory data need to be accessible across teams.
+
+Agent: Perfect! Our SAP integration is one of our most robust. It provides real-time data sync and can display production metrics directly in team channels. Would you like to see this in action with a 30-day trial?
+
+Customer: Yes, that would be ideal. What does the trial include?
+
+Agent: The trial includes full access to all enterprise features, dedicated support, and a custom integration setup for your SAP system. I can have our implementation team start the setup this week.
+
+Customer: This sounds exactly what we need. How do we proceed?
+
+Agent: I'll send you the trial agreement today. Once signed, our team can begin the SAP integration setup. I'll also schedule a follow-up call next week to ensure everything is running smoothly.
+
+Customer: Perfect! I'm excited to see how this transforms our operations.
+
+Agent: Wonderful! You'll receive the trial documents within the hour. Welcome to TechSolutions, David!","Enterprise sales call for 200-employee manufacturing company. Customer interested in comprehensive communication platform with SAP integration. Successfully set up 30-day trial for Enterprise Communication Suite with dedicated implementation support. High conversion potential due to specific integration needs.","Set up 30-day enterprise trial and schedule implementation call for SAP integration",https://recordings.techsolutions.com/call_004.mp3,9.7,195,No,English,Enthusiastic,142,9.8,3,0.96,Yes,Enterprise,High,9.6,Trial_Started,15000,9.2,0.92,Implementation_Support,75000,Sales
+CALL_005,Rachel Martinez,AI Agent Luna,2024-01-15,15:10:00,15:11:00,60,00:01:00,2.10,Yes,No,Retention,0.6,0.82,"cancel, downgrade, cost, basic plan",22,"Agent: Hi Rachel, this is Luna from TechSolutions. I understand you're considering canceling your account. Can you tell me what's prompting this decision?
+
+Customer: Hi Luna, yes I'm Rachel Martinez. The cost has become too high for our small business. We're not using all the features we're paying for.
+
+Agent: I completely understand, Rachel. Cost management is important for small businesses. Instead of canceling, would you consider our Basic plan? It's 50% less expensive and includes the core features most small businesses need.
+
+Customer: I didn't know there was a basic plan. What features would I lose?
+
+Agent: The Basic plan includes messaging, file sharing, and basic video calls. You'd lose advanced reporting and some integration features. But for most small teams, it's perfect.
+
+Customer: That actually sounds like it would meet our needs. We mainly use it for team communication.
+
+Agent: Excellent! I can downgrade your account right now, and you'll see the reduced rate on your next bill. You'll keep all your data and team setup.
+
+Customer: That would be great! Thank you for offering this solution instead of just letting me cancel.
+
+Agent: Of course! We want to find the right fit for every business. I've processed the downgrade, and you'll receive a confirmation email shortly.
+
+Customer: Perfect! This is exactly what we needed.
+
+Agent: Wonderful! Is there anything else I can help you with today, Rachel?
+
+Customer: No, that's everything. Thank you so much for saving our account!","Retention call - customer wanted to cancel due to high costs but successfully downgraded to basic plan instead. Achieved 50% cost reduction while maintaining core functionality needed by small business. Excellent retention outcome.","Downgrade customer to basic plan to prevent cancellation and maintain relationship",https://recordings.techsolutions.com/call_005.mp3,8.9,58,No,English,Grateful,148,18.5,1,0.89,Yes,Standard,Medium,8.7,Downgrade_Retention,2500,7.5,0.75,Account_Check_In,15000,Retention
+CALL_006,Alex Thompson,AI Agent Nova,2024-01-16,08:45:00,08:49:00,240,00:04:00,20.80,Yes,No,Technical_Support,0.85,0.91,"enterprise, data sync, server, connectivity",42,"Agent: Good morning Alex, this is Nova from TechSolutions enterprise support. I see you're experiencing data synchronization issues. Can you describe what's happening?
+
+Customer: Hi Nova, yes we're having major problems. Our multi-office data sync stopped working yesterday afternoon, and it's affecting our entire operation across three locations.
+
+Agent: I understand this is critical for your business operations. Let me immediately escalate this to our enterprise support team. Can you tell me which offices are affected?
+
+Customer: All three - New York, Chicago, and Dallas. The data isn't syncing between our servers, and teams can't access updated information.
+
+Agent: This sounds like a server connectivity issue. I'm connecting you with our senior technical specialist right now, and I'm also creating a high-priority ticket. What's your enterprise account ID?
+
+Customer: It's ENT-4472891. This is really impacting our productivity.
+
+Agent: I have your account pulled up. I can see your infrastructure setup. Let me run a quick diagnostic on your server connections... I'm detecting intermittent connectivity issues with your Chicago hub.
+
+Customer: That makes sense. We did have some network maintenance yesterday.
+
+Agent: That's likely the cause. I'm going to reset your sync protocols and reinitialize the connection between all three offices. This should take about 10 minutes.
+
+Customer: Okay, I'll monitor from my end.
+
+Agent: Perfect. I'm also setting up continuous monitoring for the next 24 hours to ensure stability. You should start seeing data flow resuming now.
+
+Customer: Yes! I can see the sync starting. The Chicago office data is coming through.
+
+Agent: Excellent! All three offices should be fully synchronized within the next 5 minutes. I'll send you a detailed report of what happened and the resolution steps.
+
+Customer: Thank you so much, Nova. This was incredibly fast service.
+
+Agent: You're welcome! I'll follow up in 2 hours to confirm everything is running smoothly.","Critical technical support for enterprise client experiencing data sync issues across three offices. Successfully diagnosed server connectivity problem caused by network maintenance and restored full synchronization. Provided continuous monitoring and follow-up support for mission-critical system.","Resolve enterprise data sync issue and monitor account stability for 24 hours",https://recordings.techsolutions.com/call_006.mp3,9.4,225,No,English,Stressed_to_Relieved,135,11.2,4,0.93,Yes,Enterprise,High,9.2,Issue_Resolved,0,8.8,0.0,System_Monitoring,120000,Support
+CALL_007,Jessica Lee,AI Agent Aria,2024-01-16,12:15:00,12:16:00,60,00:01:00,1.95,Yes,No,Customer_Success,0.95,0.94,"feedback, features, mobile, notifications",18,"Agent: Hi Jessica! This is Aria from TechSolutions customer success team. How are you enjoying our platform?
+
+Customer: Hi Aria! I'm Jessica Lee, and I absolutely love it! The new features you released last month have been game-changers for our team.
+
+Agent: That's wonderful to hear! Which features have been most helpful for you?
+
+Customer: The automated workflows and the new dashboard analytics. They've saved us hours each week. I do have one feature request though.
+
+Agent: I'd love to hear it! What would make your experience even better?
+
+Customer: Mobile push notifications for urgent reports. Sometimes we need to know immediately when critical data comes in, even when we're away from our desks.
+
+Agent: That's an excellent suggestion! Mobile notifications for urgent alerts would definitely enhance the user experience. I'm adding this to our product development roadmap.
+
+Customer: That would be amazing! When might something like that be available?
+
+Agent: I'll forward this directly to our product team. Based on similar requests, mobile notifications are likely to be included in our Q2 release. I'll make sure you're notified when it's available.
+
+Customer: Perfect! You guys always listen to customer feedback, which is why we love working with TechSolutions.
+
+Agent: Thank you so much, Jessica! Feedback like yours helps us build better products. Is there anything else I can help you with?
+
+Customer: No, that's all. Keep up the great work!
+
+Agent: Will do! Thanks for being such a valued customer, Jessica!","Customer success call with highly satisfied customer providing positive feedback about recent features. Customer requested mobile notifications for urgent reports, which was forwarded to product development team. Excellent customer relationship and satisfaction score.","Forward mobile notification request to product team and notify customer of Q2 release timeline",https://recordings.techsolutions.com/call_007.mp3,9.8,58,No,English,Happy,155,5.2,0,0.97,Yes,Premium,Low,9.7,Feature_Request,0,9.1,0.0,Product_Update_Notification,45000,Success
+CALL_008,Kevin Rodriguez,AI Agent Zara,2024-01-16,16:30:00,16:33:00,180,00:03:00,11.25,Yes,Yes,Sales_Inquiry,0.88,0.89,"API, integration, CRM, premium support",31,"Agent: Good afternoon! This is Zara from TechSolutions API sales team. I understand you're interested in our CRM integration capabilities?
+
+Customer: Hi Zara, yes I'm Kevin Rodriguez, lead developer at DataSync Solutions. We need to integrate your platform with our custom CRM system.
+
+Agent: Excellent! Our API platform is designed for exactly these types of integrations. We have RESTful APIs with comprehensive documentation and sandbox environments for testing.
+
+Customer: That sounds good. What about support during the integration process? Our timeline is pretty tight.
+
+Agent: For API integrations, I highly recommend our Premium Support package. It includes dedicated developer support, priority response times, and integration assistance.
+
+Customer: What does that include exactly?
+
+Agent: Premium Support gives you direct access to our API specialists, code review services, and guaranteed 2-hour response times. We also provide integration templates and best practices documentation.
+
+Customer: That's exactly what we need. What's the cost structure?
+
+Agent: The Premium Support package is $299 per month, and it includes unlimited API calls for integration testing. Once you're live, you'll move to our standard usage-based pricing.
+
+Customer: That works within our budget. How quickly can we get started?
+
+Agent: I can set up your Premium Support account today. You'll receive API credentials and access to our developer portal within 24 hours.
+
+Customer: Perfect! Let's move forward with this.
+
+Agent: Wonderful! I'll send you the Premium Support agreement and API documentation package. You'll also get a dedicated integration specialist assigned to your project.
+
+Customer: This is exactly the support level we were hoping for. Thank you!
+
+Agent: You're welcome, Kevin! I'll have everything set up by tomorrow morning.","API integration sales call with developer needing CRM integration support. Successfully sold Premium Support package with dedicated developer assistance and priority response times. Customer has tight timeline and high technical requirements.","Send API documentation and premium support agreement, assign dedicated integration specialist",https://recordings.techsolutions.com/call_008.mp3,9.1,175,No,English,Professional,144,13.8,2,0.92,Yes,Premium,Medium,9.0,Premium_Support_Sale,3588,8.5,0.88,Developer_Onboarding,35000,Sales
+CALL_009,Maria Garcia,AI Agent Iris,2024-01-16,17:45:00,17:48:30,210,00:03:30,8.40,Yes,No,Billing_Support,0.82,0.86,"usage, overage, professional plus, alerts",29,"Agent: Hello Maria, this is Iris from TechSolutions billing support. I see you have questions about your recent usage charges?
+
+Customer: Hi Iris, yes I'm Maria Garcia. I got a bill that's much higher than usual, and I'm not sure why. There are overage charges I don't understand.
+
+Agent: I'd be happy to explain those charges, Maria. Let me pull up your account details. I can see you exceeded your plan limits last month, which triggered overage fees.
+
+Customer: I didn't realize we were close to our limits. Is there a way to monitor this better?
+
+Agent: Absolutely! We have usage alerts that can notify you when you reach 75% and 90% of your limits. I can set those up for you right now.
+
+Customer: That would be very helpful. Also, would upgrading to a higher plan make more sense financially?
+
+Agent: Let me analyze your usage patterns... Based on your recent activity, our Professional Plus plan would actually save you money. It includes higher limits and costs less than your current plan plus overages.
+
+Customer: Really? How much would I save?
+
+Agent: With your usage levels, you'd save approximately $45 per month on Professional Plus, and you'd get additional features like advanced analytics and priority support.
+
+Customer: That sounds like a no-brainer. Can you upgrade me now?
+
+Agent: Absolutely! I'll upgrade your account to Professional Plus effective immediately. You'll see the new rate on your next bill, and I'm setting up those usage alerts too.
+
+Customer: Perfect! Thank you for explaining everything so clearly and finding a better solution.
+
+Agent: You're very welcome, Maria! The upgrade is complete, and you'll receive a confirmation email shortly.
+
+Customer: Excellent service, thank you!","Billing support call for usage overage explanation. Customer was exceeding plan limits causing high bills. Successfully upsold to Professional Plus plan which saves customer $45/month while providing better service. Also configured usage alerts to prevent future overages.","Upgrade to Professional Plus plan and set usage alerts at 75% and 90% thresholds",https://recordings.techsolutions.com/call_009.mp3,9.3,205,No,English,Satisfied,149,16.4,1,0.88,Yes,Standard,Medium,9.1,Plan_Upgrade,540,8.2,0.82,Usage_Monitoring,28000,Billing
+CALL_010,Steven Park,AI Agent Phoenix,2024-01-17,10:00:00,10:06:30,390,00:06:30,26.00,Yes,Yes,Enterprise_Sales,0.92,0.95,"enterprise analytics, 10TB, DataFlow Industries, CTO",45,"Agent: Good morning Steven! This is Phoenix from TechSolutions enterprise analytics division. Thank you for scheduling this call to discuss your data processing needs.
+
+Customer: Good morning Phoenix! I'm Steven Park, CTO at DataFlow Industries. We're looking for an enterprise analytics platform that can handle massive data volumes - we process about 10TB daily.
+
+Agent: That's exactly our specialty, Steven! Our Enterprise Analytics Platform is built for high-volume data processing. We have clients processing 50TB+ daily without performance issues.
+
+Customer: Impressive! What about real-time processing capabilities? We need near-instantaneous insights for our manufacturing operations.
+
+Agent: Our platform provides sub-second query responses even on massive datasets. We use distributed computing and in-memory processing to achieve this speed. Can you tell me more about your specific use cases?
+
+Customer: We monitor production lines across 12 facilities globally. We need real-time quality control analytics, predictive maintenance insights, and supply chain optimization.
+
+Agent: Perfect! Those are exactly the use cases our platform excels at. We have pre-built manufacturing analytics modules for quality control and predictive maintenance. The supply chain optimization module can integrate with your existing ERP systems.
+
+Customer: This sounds very promising. What about scalability? Our data volumes are growing 30% annually.
+
+Agent: Our cloud-native architecture scales automatically. You can process 10TB today and 50TB next year without any infrastructure changes. You only pay for what you use.
+
+Customer: Excellent! What would implementation look like for a company our size?
+
+Agent: For an enterprise deployment like yours, we typically do a phased rollout over 3-4 months. We'd start with one facility as a pilot, then scale across all locations. You'd have a dedicated implementation team and 24/7 support.
+
+Customer: That timeline works well with our planning cycle. What's the next step?
+
+Agent: I'd like to schedule a technical deep-dive session with our solutions architects. They can demonstrate the platform with your actual data and show specific manufacturing analytics capabilities.
+
+Customer: That would be perfect. When can we schedule that?
+
+Agent: How about next Tuesday at 2 PM? I'll bring our manufacturing analytics specialist and solutions architect.
+
+Customer: Tuesday at 2 PM works perfectly. I'll have our data team join as well.
+
+Agent: Excellent! I'll send you the meeting details and some pre-reading materials about our manufacturing analytics modules.
+
+Customer: This has been very informative, Phoenix. I'm excited about the possibilities.
+
+Agent: Thank you, Steven! I'm confident our platform will transform your analytics capabilities. See you Tuesday!","High-value enterprise sales call with DataFlow Industries CTO discussing analytics platform for 10TB daily processing. Customer has complex requirements including real-time processing, predictive maintenance, and supply chain optimization. Successfully scheduled technical deep-dive for next Tuesday with solutions architects.","Schedule technical deep-dive and send enterprise solution materials for manufacturing analytics",https://recordings.techsolutions.com/call_010.mp3,9.6,380,No,English,Engaged,140,7.8,5,0.97,Yes,Enterprise,High,9.8,Technical_Demo_Scheduled,50000,9.5,0.95,Technical_Presentation,500000,Sales
+CALL_011,Amanda Foster,AI Agent Sage,2024-01-17,11:30:00,11:33:15,195,00:03:15,12.75,Yes,No,Technical_Support,0.87,0.90,"mobile app, sync, offline mode, data loss",38,"Agent: Hello Amanda, this is Sage from TechSolutions mobile support. I understand you're experiencing synchronization issues with our mobile app?
+
+Customer: Hi Sage, yes I'm Amanda Foster. The mobile app isn't syncing properly with the web platform. I've lost some data I entered while offline.
+
+Agent: I'm sorry to hear about the data loss, Amanda. That's definitely not the experience we want you to have. Let me help you recover that data and fix the sync issue.
+
+Customer: I was working on client reports during my flight yesterday, and when I connected to WiFi, the data didn't sync properly.
+
+Agent: I understand how frustrating that must be. Our offline mode should preserve all data until sync is possible. Let me check your account's sync logs... I can see there was a sync conflict that prevented proper data merge.
+
+Customer: Can you recover the data I lost?
+
+Agent: Good news! I can see your offline data in our backup logs. I'm going to manually restore your client reports from yesterday's session. This will take about 5 minutes.
+
+Customer: That would be amazing! I spent hours on those reports.
+
+Agent: I've initiated the data recovery process. While that's running, let me also update your mobile app to the latest version, which has improved offline sync capabilities.
+
+Customer: I didn't know there was an update available.
+
+Agent: The update includes better conflict resolution and automatic backup of offline work. You should receive a notification to update once I enable it for your account.
+
+Customer: Perfect! I can see my reports are back now. Thank you so much!
+
+Agent: Excellent! The sync issue should be resolved now. I'm also enabling enhanced offline mode for your account, which provides better data protection during offline work.
+
+Customer: This is exactly what I needed. The mobile app is crucial for my field work.
+
+Agent: I understand completely. Is there anything else I can help you with regarding the mobile app?
+
+Customer: No, everything looks perfect now. Thank you for the excellent support!","Technical support call for mobile app sync issues and data loss. Successfully recovered lost client reports from backup logs and updated app to latest version with improved offline capabilities. Enhanced offline mode enabled for better data protection during field work.","Recover offline data, update mobile app, and enable enhanced offline mode for field work",https://recordings.techsolutions.com/call_011.mp3,9.2,190,No,English,Relieved,146,14.2,2,0.91,Yes,Premium,Medium,9.0,Issue_Resolved,0,8.1,0.0,Mobile_App_Training,32000,Support
+CALL_012,Robert Kim,AI Agent Echo,2024-01-17,14:15:00,14:17:45,165,00:02:45,8.95,Yes,Yes,Sales_Inquiry,0.91,0.93,"startup, team collaboration, growth plan, video conferencing",33,"Agent: Good afternoon Robert! This is Echo from TechSolutions startup sales team. I understand you're looking for a collaboration platform for your growing startup?
+
+Customer: Hi Echo, yes I'm Robert Kim, founder of InnovateTech. We're a 15-person startup that's growing rapidly, and we need better team collaboration tools.
+
+Agent: Congratulations on your growth! Our Growth Plan is specifically designed for startups like yours. It includes team messaging, video conferencing, file sharing, and project management tools.
+
+Customer: That sounds comprehensive. What makes it different from other platforms?
+
+Agent: Our Growth Plan scales with you automatically. As you add team members, you get more features unlocked. Plus, we offer startup-friendly pricing with no long-term contracts.
+
+Customer: Pricing is definitely important for us. What are we looking at cost-wise?
+
+Agent: For a 15-person team, you'd pay $12 per user per month, but we offer a 40% startup discount for the first year. That brings it down to $7.20 per user monthly.
+
+Customer: That's very reasonable! What about video conferencing capabilities? We have remote team members.
+
+Agent: Our video conferencing supports up to 100 participants with HD quality, screen sharing, and recording. Perfect for remote teams and client meetings.
+
+Customer: Excellent! Can we try it before committing?
+
+Agent: Absolutely! I can set up a 30-day free trial with full access to all Growth Plan features. No credit card required.
+
+Customer: That's perfect. How do we get started?
+
+Agent: I'll send you the trial setup link right after this call. I'll also schedule a brief onboarding session to help your team get up to speed quickly.
+
+Customer: Great! When can we do the onboarding?
+
+Agent: How about Friday at 3 PM? I'll walk your team through the key features and best practices for startup collaboration.
+
+Customer: Friday at 3 PM works perfectly. Thank you for making this so easy!
+
+Agent: You're welcome, Robert! I'm excited to help InnovateTech improve their collaboration.","Sales inquiry from 15-person startup needing team collaboration platform. Successfully offered Growth Plan with 40% startup discount and 30-day free trial. Scheduled onboarding session to help team adoption. Strong fit for startup-specific needs and pricing.","Set up 30-day free trial and schedule Friday onboarding session for startup team",https://recordings.techsolutions.com/call_012.mp3,9.4,160,No,English,Optimistic,148,11.5,1,0.94,Yes,Standard,Medium,9.2,Trial_Started,2592,8.8,0.87,Team_Onboarding,18000,Sales
+CALL_013,Lisa Wang,AI Agent River,2024-01-17,15:45:00,15:46:30,90,00:01:30,3.15,Yes,No,Customer_Success,0.88,0.92,"training, team adoption, best practices, productivity",24,"Agent: Hi Lisa! This is River from TechSolutions customer success. How is your team's adoption of our platform going?
+
+Customer: Hi River! I'm Lisa Wang, and overall it's going well, but I think we could be using it more effectively. Some team members are still learning the advanced features.
+
+Agent: That's completely normal during the adoption phase. We have comprehensive training resources that can help accelerate your team's proficiency. Would you be interested in a customized training session?
+
+Customer: Yes, that would be very helpful! What does that involve?
+
+Agent: I can arrange a live training session tailored to your team's specific workflows. We'll cover advanced features, productivity tips, and best practices based on how your team works.
+
+Customer: That sounds perfect. We're particularly struggling with project management and workflow automation features.
+
+Agent: Excellent! Those are two of our most powerful features once teams master them. I'll focus the training on those areas and show you how to set up automated workflows that save hours each week.
+
+Customer: When could we schedule this?
+
+Agent: I have availability next Wednesday at 2 PM or Friday at 10 AM. The session would be about 90 minutes and include all team members.
+
+Customer: Wednesday at 2 PM works better for our team. Can you send calendar invites?
+
+Agent: Absolutely! I'll send invites to your whole team and include some prep materials so everyone gets maximum value from the session.
+
+Customer: Perfect! This is exactly what we needed to take our productivity to the next level.
+
+Agent: I'm excited to help your team unlock the platform's full potential, Lisa!","Customer success call to improve team adoption and feature utilization. Customer needs training on advanced features, particularly project management and workflow automation. Scheduled customized 90-minute training session for Wednesday to accelerate team proficiency.","Schedule team training session for Wednesday 2 PM focusing on project management and workflow automation",https://recordings.techsolutions.com/call_013.mp3,9.0,85,No,English,Motivated,153,8.9,0,0.93,Yes,Premium,Low,9.1,Training_Scheduled,0,8.4,0.0,Advanced_Feature_Training,41000,Success
+CALL_014,Carlos Rodriguez,AI Agent Storm,2024-01-18,09:20:00,09:24:15,255,00:04:15,17.85,Yes,No,Technical_Support,0.79,0.87,"integration, webhook, API errors, troubleshooting",41,"Agent: Good morning Carlos! This is Storm from TechSolutions API support. I see you're experiencing webhook integration issues?
+
+Customer: Hi Storm, yes I'm Carlos Rodriguez, senior developer at CloudSync. Our webhook integrations keep failing with 500 errors, and it's affecting our automated workflows.
+
+Agent: I understand how critical webhook reliability is for automated systems. Let me investigate these 500 errors immediately. Can you provide me with some recent webhook URLs that are failing?
+
+Customer: Sure, we're seeing failures on webhooks for user creation, data updates, and notification triggers. It started happening about 6 hours ago.
+
+Agent: Thank you. I'm checking our webhook logs now... I can see the 500 errors you're referring to. It appears there's an issue with our webhook processing queue that's causing timeouts.
+
+Customer: Is this affecting other customers too?
+
+Agent: Yes, this is a system-wide issue that our engineering team is actively working on. I'm escalating your case to get priority resolution since it's impacting your production workflows.
+
+Customer: How long until it's fixed? Our customers are starting to notice delays.
+
+Agent: Our engineering team estimates 30-45 minutes for full resolution. In the meantime, I can set up a temporary webhook endpoint that will queue your requests and replay them once the system is restored.
+
+Customer: That would be helpful. How does that work?
+
+Agent: I'll provide you with a temporary webhook URL that captures all your requests safely. Once our main system is restored, all queued webhooks will be processed automatically.
+
+Customer: Perfect! Can you send me that URL?
+
+Agent: I'm sending it to your registered email right now, along with instructions for switching back to the main endpoints once we're fully operational.
+
+Customer: Great! I'll implement the temporary solution immediately.
+
+Agent: Excellent! I'll also send you real-time updates on the resolution progress and notify you the moment our main webhook system is fully restored.
+
+Customer: Thank you for the proactive support and temporary solution, Storm.
+
+Agent: You're welcome, Carlos! I'll follow up within the hour with a status update.","Technical support for webhook integration failures causing 500 errors in production. Identified system-wide webhook processing queue issue affecting multiple customers. Provided temporary webhook endpoint solution while engineering team resolves main system issue.","Provide temporary webhook endpoint and monitor system restoration progress with hourly updates",https://recordings.techsolutions.com/call_014.mp3,8.7,245,Yes,English,Frustrated_to_Relieved,141,13.7,3,0.89,Yes,Premium,High,8.8,Temporary_Solution_Provided,0,7.9,0.0,System_Status_Updates,55000,Support
+CALL_015,Jennifer Adams,AI Agent Blaze,2024-01-18,11:00:00,11:02:30,150,00:02:30,6.75,Yes,Yes,Retention,0.74,0.83,"competitor, pricing, features, contract renewal",27,"Agent: Hi Jennifer, this is Blaze from TechSolutions account management. I understand you're evaluating options for your contract renewal?
+
+Customer: Hi Blaze, yes I'm Jennifer Adams from Creative Solutions. We're comparing your platform with competitors before renewing. The pricing has become a concern for our budget.
+
+Agent: I appreciate your honesty, Jennifer. Pricing is always an important factor. Can you tell me what specific pricing concerns you have, and what competitors you're considering?
+
+Customer: We're looking at two other platforms that are about 25% less expensive. However, we do like your feature set better.
+
+Agent: I'm glad you value our features! Rather than lose a valued customer like Creative Solutions, let me see what options I have for your renewal. What's your current monthly spend with us?
+
+Customer: We're paying $850 per month for our current plan.
+
+Agent: Given your loyalty and the competitive situation, I can offer you a 20% discount on your renewal, bringing your monthly cost down to $680. This would be locked in for a full year.
+
+Customer: That's much more competitive! What about the contract terms?
+
+Agent: I can also offer you a flexible contract with a 6-month out clause instead of our standard annual commitment. This gives you more flexibility while securing the discounted rate.
+
+Customer: That addresses both of our main concerns. The discount makes it competitive, and the flexible terms reduce our risk.
+
+Agent: Excellent! I'll prepare the renewal contract with the 20% discount and flexible terms. You'll have it by end of day today.
+
+Customer: Perfect! I think this will work well for both of us.
+
+Agent: Wonderful, Jennifer! I'm glad we could find a solution that works for Creative Solutions.","Retention call for contract renewal with customer considering competitors due to pricing concerns. Successfully negotiated 20% discount and flexible 6-month out clause to retain customer. Competitive pricing match while maintaining relationship and reducing churn risk.","Prepare renewal contract with 20% discount and 6-month flexibility clause",https://recordings.techsolutions.com/call_015.mp3,8.5,145,No,English,Relieved,144,16.8,2,0.85,Yes,Standard,Medium,8.6,Contract_Renewal,2040,7.8,0.78,Contract_Management,25000,Retention
+CALL_016,Michael Thompson,AI Agent Frost,2024-01-18,13:30:00,13:34:45,285,00:04:45,19.95,Yes,Yes,Enterprise_Sales,0.93,0.94,"healthcare, HIPAA, compliance, security, 500 users",48,"Agent: Good afternoon Michael! This is Frost from TechSolutions healthcare division. Thank you for your interest in our HIPAA-compliant enterprise solution.
+
+Customer: Hi Frost, I'm Michael Thompson, IT Director at Regional Medical Center. We need a communication platform that meets strict healthcare compliance requirements for our 500-user organization.
+
+Agent: Healthcare compliance is our specialty, Michael. Our Healthcare Enterprise Suite is specifically designed for medical organizations and includes full HIPAA compliance, end-to-end encryption, and audit trails.
+
+Customer: Compliance is absolutely critical for us. What specific HIPAA safeguards do you have in place?
+
+Agent: We have comprehensive administrative, physical, and technical safeguards. This includes encrypted data transmission, access controls, audit logging, and business associate agreements. We're also SOC 2 Type II certified.
+
+Customer: Excellent! What about data residency? We need to ensure patient data stays within specific geographic boundaries.
+
+Agent: Our healthcare solution offers data residency controls. You can specify that all data remains within US data centers, and we provide detailed data location reporting for compliance audits.
+
+Customer: That's exactly what we need. What about integration with our existing EMR system?
+
+Agent: We have pre-built integrations with major EMR systems including Epic, Cerner, and Allscripts. These integrations maintain HIPAA compliance while enabling seamless workflow integration.
+
+Customer: Perfect! We're using Epic. What would implementation look like for our organization?
+
+Agent: For a 500-user healthcare deployment, we typically plan a 6-8 week implementation with dedicated healthcare compliance specialists. We include staff training on HIPAA-compliant communication practices.
+
+Customer: What about ongoing compliance support?
+
+Agent: Our Healthcare Enterprise Suite includes ongoing compliance monitoring, regular security assessments, and dedicated healthcare support with guaranteed response times for compliance-related issues.
+
+Customer: This sounds comprehensive. What's the next step?
+
+Agent: I'd like to schedule a detailed compliance review with our healthcare specialists. They can demonstrate our HIPAA features and discuss your specific compliance requirements.
+
+Customer: That would be very valuable. When can we schedule that?
+
+Agent: How about next Monday at 10 AM? I'll bring our healthcare compliance specialist and solutions architect.
+
+Customer: Monday at 10 AM works perfectly. Please include our compliance officer in the meeting invitation.
+
+Agent: Absolutely! I'll send meeting details to both you and your compliance officer, along with our HIPAA compliance documentation.
+
+Customer: Excellent! This has been very informative, Frost.","Enterprise healthcare sales call for 500-user HIPAA-compliant communication platform. Customer has strict compliance requirements including data residency and EMR integration. Successfully scheduled compliance review with healthcare specialists for detailed demonstration.","Schedule HIPAA compliance review and send healthcare documentation package",https://recordings.techsolutions.com/call_016.mp3,9.5,275,No,English,Professional,139,9.2,4,0.96,Yes,Enterprise,High,9.4,Compliance_Review_Scheduled,25000,9.3,0.93,Healthcare_Compliance_Demo,250000,Sales
+CALL_017,Sarah Mitchell,AI Agent Comet,2024-01-18,15:15:00,15:16:45,105,00:01:45,4.55,Yes,No,Billing_Inquiry,0.86,0.88,"invoice, payment, auto-pay, credit card",21,"Agent: Hi Sarah, this is Comet from TechSolutions billing. I see you have a question about your recent invoice?
+
+Customer: Hi Comet, yes I'm Sarah Mitchell. I received an invoice but I thought I had auto-pay set up. Did my payment not go through?
+
+Agent: Let me check your account right away, Sarah. I can see that auto-pay was set up, but your credit card on file expired last month, which caused the payment to fail.
+
+Customer: Oh no! I got a new card but forgot to update it. Can I fix that now?
+
+Agent: Absolutely! I can help you update your payment method right now, and then process the current invoice payment.
+
+Customer: Perfect! My new card number is... actually, is it safe to give that over the phone?
+
+Agent: I appreciate you being security-conscious! For your protection, I'll send you a secure payment link where you can safely update your card information. You'll receive it via email in about 2 minutes.
+
+Customer: That's much better, thank you! Will auto-pay resume automatically once I update the card?
+
+Agent: Yes, exactly! Once you update your payment method through the secure link, auto-pay will be reactivated for future invoices. You won't have to worry about this happening again.
+
+Customer: Excellent! And there won't be any late fees for this missed payment?
+
+Agent: Since it was due to an expired card and you're resolving it promptly, I'm waiving any late fees. Your account will show as current once the payment processes.
+
+Customer: Thank you so much for making this easy and secure!
+
+Agent: You're very welcome, Sarah! Is there anything else I can help you with today?
+
+Customer: No, that covers everything. I'll watch for that secure link!","Billing inquiry about failed auto-pay due to expired credit card. Provided secure payment link for safe card information update and waived late fees due to prompt resolution. Auto-pay will resume automatically once new card is processed.","Send secure payment link and waive late fees for expired card issue",https://recordings.techsolutions.com/call_017.mp3,9.1,100,No,English,Appreciative,150,12.4,1,0.90,No,Standard,Low,9.0,Payment_Update_Pending,0,7.6,0.0,Payment_Method_Monitoring,22000,Billing
+CALL_018,Daniel Foster,AI Agent Vortex,2024-01-19,10:45:00,10:48:30,210,00:03:30,14.70,Yes,No,Technical_Support,0.84,0.89,"performance, slow loading, optimization, database",36,"Agent: Good morning Daniel! This is Vortex from TechSolutions performance support. I understand you're experiencing slow loading times?
+
+Customer: Hi Vortex, yes I'm Daniel Foster, system admin at TechFlow Corp. Our platform has been loading very slowly for the past few days, especially during peak hours.
+
+Agent: Slow performance can definitely impact productivity. Let me analyze your account's performance metrics right away. I can see you have about 150 active users - is that correct?
+
+Customer: Yes, that's right. The slowdown seems to happen mostly between 9 AM and 11 AM when everyone logs in.
+
+Agent: That timing suggests a peak load issue. I'm looking at your database query performance during those hours... I can see some queries taking 15-20 seconds that should complete in under 2 seconds.
+
+Customer: That explains the delays our users are experiencing. Can this be optimized?
+
+Agent: Absolutely! I can implement several optimizations right now. First, I'll enable query caching for your most common operations, and second, I'll optimize your database indexes.
+
+Customer: How long will that take, and will it affect our users?
+
+Agent: The optimizations can be applied without any downtime. I'll implement them in the next 10 minutes, and you should see immediate improvement in loading times.
+
+Customer: That's great! Will this prevent the issue from happening again?
+
+Agent: These optimizations will handle your current load much better. I'm also setting up performance monitoring alerts so we can proactively address any future performance issues before they impact users.
+
+Customer: Perfect! I can already see pages loading faster.
+
+Agent: Excellent! The query caching is now active, and I've completed the database optimization. Your peak hour performance should be significantly improved.
+
+Customer: This is exactly what we needed. Thank you for the quick resolution!
+
+Agent: You're welcome, Daniel! I'll monitor your performance for the next few days to ensure everything stays optimized.","Technical support for slow loading performance during peak hours affecting 150 users. Successfully implemented query caching and database optimization without downtime. Set up proactive performance monitoring to prevent future issues.","Implement performance optimizations and set up proactive monitoring alerts",https://recordings.techsolutions.com/call_018.mp3,9.2,205,No,English,Satisfied,143,11.8,2,0.91,Yes,Premium,Medium,9.1,Performance_Optimized,0,8.3,0.0,Performance_Monitoring,38000,Support
+CALL_019,Nicole Chen,AI Agent Spark,2024-01-19,14:20:00,14:22:15,135,00:02:15,5.85,Yes,Yes,Sales_Inquiry,0.89,0.91,"nonprofit, education, discount, student management",30,"Agent: Good afternoon Nicole! This is Spark from TechSolutions nonprofit sales. I understand you're looking for a solution for your educational organization?
+
+Customer: Hi Spark, yes I'm Nicole Chen, director at Future Leaders Academy. We're a nonprofit that provides after-school programs, and we need better student management and communication tools.
+
+Agent: That's wonderful work you're doing! We have special nonprofit pricing and features specifically designed for educational organizations. Our Education Suite includes student management, parent communication, and program tracking.
+
+Customer: That sounds perfect for our needs. What kind of nonprofit discount do you offer?
+
+Agent: We provide a 50% nonprofit discount for qualified educational organizations like yours. For your size organization, that would bring your monthly cost down to about $125 per month.
+
+Customer: That's very reasonable for our budget! What's included in the Education Suite?
+
+Agent: You get student enrollment management, attendance tracking, parent communication portals, program scheduling, and reporting tools. Everything you need to manage your after-school programs efficiently.
+
+Customer: Excellent! How do we qualify for the nonprofit discount?
+
+Agent: I just need your nonprofit tax-exempt documentation, which you can upload through our secure portal. Once verified, the discount applies immediately.
+
+Customer: That's easy - we have all that documentation ready. When can we get started?
+
+Agent: I can set up your account today! I'll send you the nonprofit verification portal link and schedule a brief training session to get your team up to speed.
+
+Customer: Perfect! When could we do the training?
+
+Agent: How about next Wednesday at 3 PM? I'll show you and your team how to set up student profiles, communicate with parents, and track program attendance.
+
+Customer: Wednesday at 3 PM works great for our team. Thank you for making this so affordable for nonprofits!
+
+Agent: It's our pleasure to support organizations like Future Leaders Academy. Education is so important!","Sales inquiry from nonprofit after-school program needing student management tools. Successfully offered Education Suite with 50% nonprofit discount and scheduled training session. Strong mission alignment and budget-friendly pricing for educational organization.","Set up nonprofit account with 50% discount and schedule Wednesday training session",https://recordings.techsolutions.com/call_019.mp3,9.3,130,No,English,Grateful,147,9.6,1,0.92,Yes,Standard,Low,9.2,Nonprofit_Account_Setup,1500,8.6,0.86,Educational_Training,15000,Sales
+CALL_020,James Wilson,AI Agent Thunder,2024-01-19,16:00:00,16:05:15,315,00:05:15,22.05,Yes,No,Technical_Support,0.81,0.86,"security, breach, investigation, forensics",44,"Agent: Good afternoon James, this is Thunder from TechSolutions security team. I understand you have concerns about a potential security incident?
+
+Customer: Hi Thunder, yes I'm James Wilson, security officer at SecureData Inc. We detected some unusual login activity on our account and want to investigate immediately.
+
+Agent: I take security concerns very seriously, James. Let me immediately escalate this to our security incident response team and begin investigating the unusual activity you mentioned.
+
+Customer: Thank you. We noticed login attempts from IP addresses that don't match our normal geographic locations, and some occurred outside business hours.
+
+Agent: That's definitely suspicious activity that warrants immediate investigation. I'm pulling your account's security logs now and can see the anomalous login patterns you're referring to.
+
+Customer: What can you determine from the logs?
+
+Agent: I can see login attempts from three different countries over the past 48 hours. However, I also notice that all successful logins used valid credentials and two-factor authentication. This suggests either credential compromise or authorized remote access.
+
+Customer: We do have some remote employees, but these locations seem unusual. Can you identify which accounts were accessed?
+
+Agent: Yes, I can see that two specific user accounts had the unusual geographic activity. I'm going to immediately require password resets for those accounts and enable enhanced monitoring.
+
+Customer: Good. What about any data access during these sessions?
+
+Agent: I'm analyzing the session logs now... I can see file access activity, but it appears to be normal business documents. However, I'm flagging all accessed files for your internal review.
+
+Customer: Excellent. What are your recommendations for securing our account?
+
+Agent: I recommend immediate password resets for the affected accounts, enabling IP address restrictions for your organization, and implementing our advanced threat detection service.
+
+Customer: Let's implement all of those measures. How quickly can that be done?
+
+Agent: I can implement the security enhancements immediately. I'm also creating a detailed forensic report of all activity during the suspicious timeframe for your security review.
+
+Customer: Perfect. This is exactly the response we needed.
+
+Agent: Security is our top priority, James. I'll have the full forensic report to you within 2 hours, and I'll monitor your account closely for the next 72 hours.","Security incident response for suspicious login activity from unusual geographic locations. Conducted immediate forensic investigation, implemented enhanced security measures, and provided detailed activity analysis. Proactive security response with comprehensive monitoring.","Implement enhanced security measures and provide forensic report within 2 hours",https://recordings.techsolutions.com/call_020.mp3,8.9,305,Yes,English,Concerned_to_Confident,138,15.3,4,0.88,Yes,Enterprise,High,9.0,Security_Enhanced,0,8.7,0.0,Security_Monitoring,85000,Support
+
