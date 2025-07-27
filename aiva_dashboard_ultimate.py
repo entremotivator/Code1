@@ -368,68 +368,6 @@ if 'refresh_interval' not in st.session_state:
 # AUTHENTICATION SYSTEM
 #######################################
 
-def check_password():
-    """Returns `True` if the user entered the correct password."""
-    
-    def password_entered():
-        """Checks whether the password entered by the user is correct."""
-        # Safely get the correct password from secrets, env, or fallback
-        correct_password = (
-            st.secrets.get("password") or
-            os.getenv("VAPI_PASSWORD") or
-            "admin123"
-        )
-
-        # Safely get the entered password without KeyError
-        entered_password = st.session_state.get("password", "")
-
-        if entered_password == correct_password:
-            st.session_state["password_correct"] = True
-            st.session_state["authenticated"] = True
-            st.session_state.pop("password", None)  # Remove password from session
-        else:
-            st.session_state["password_correct"] = False
-
-    # If password already validated in this session
-    if st.session_state.get("password_correct", False):
-        return True
-
-    # Show login UI
-    st.markdown("""
-    <div class="vapi-header">
-        <h1>🤖 VAPI AI Call Center</h1>
-        <p>Advanced AI Phone Call Management System</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2, col3 = st.columns([1, 2, 1])
-    
-    with col2:
-        st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-        st.markdown("### 🔐 Secure Access Required")
-
-        # Input with safe session key usage
-        st.text_input(
-            "🔑 Enter Password", 
-            type="password", 
-            key="password", 
-            on_change=password_entered,
-            help="Default password: admin123"
-        )
-
-        # Show error if incorrect password attempted
-        if "password_correct" in st.session_state:
-            if not st.session_state["password_correct"]:
-                st.error("❌ Incorrect password. Please try again.")
-
-        st.info("💡 **Default Password:** `admin123`")
-        st.markdown('</div>', unsafe_allow_html=True)
-
-    return False
-
-# 🔐 Block app execution unless authenticated
-if not check_password():
-    st.stop()
 
 
 #######################################
