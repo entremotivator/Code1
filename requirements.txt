@@ -7,4 +7,5 @@ openpyxl>=3.1.0
 flask>=3.0.0
 gspread
 streamlit-calendar
-st-aggrid==0.3.3
+st-aggrid
+streamlit_aggrid
