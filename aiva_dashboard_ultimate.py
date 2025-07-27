@@ -369,67 +369,68 @@ if 'refresh_interval' not in st.session_state:
 #######################################
 
 def check_password():
-    """Returns `True` if the user had the correct password."""
+    """Returns `True` if the user entered the correct password."""
     
     def password_entered():
-        """Checks whether a password entered by the user is correct."""
-        # Try multiple password sources with graceful fallback
-        try:
-            # Option 1: Try secrets (if available)
-            try:
-                correct_password = st.secrets.get("password", "admin123")
-            except:
-                # Option 2: Try environment variable
-                import os
-                correct_password = os.getenv("VAPI_PASSWORD", "admin123")
-        except:
-            # Option 3: Default fallback
-            correct_password = "admin123"
-        
-        if st.session_state["password"] == correct_password:
+        """Checks whether the password entered by the user is correct."""
+        # Safely get the correct password from secrets, env, or fallback
+        correct_password = (
+            st.secrets.get("password") or
+            os.getenv("VAPI_PASSWORD") or
+            "admin123"
+        )
+
+        # Safely get the entered password without KeyError
+        entered_password = st.session_state.get("password", "")
+
+        if entered_password == correct_password:
             st.session_state["password_correct"] = True
-            st.session_state.authenticated = True
-            del st.session_state["password"]  # Don't store the password
+            st.session_state["authenticated"] = True
+            st.session_state.pop("password", None)  # Remove password from session
         else:
             st.session_state["password_correct"] = False
 
-    # Return True if password is validated
+    # If password already validated in this session
     if st.session_state.get("password_correct", False):
         return True
 
-    # Show input for password
+    # Show login UI
     st.markdown("""
     <div class="vapi-header">
         <h1>🤖 VAPI AI Call Center</h1>
         <p>Advanced AI Phone Call Management System</p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
         st.markdown('<div class="metric-card">', unsafe_allow_html=True)
         st.markdown("### 🔐 Secure Access Required")
+
+        # Input with safe session key usage
         st.text_input(
             "🔑 Enter Password", 
             type="password", 
-            on_change=password_entered, 
-            key="password",
+            key="password", 
+            on_change=password_entered,
             help="Default password: admin123"
         )
-        
+
+        # Show error if incorrect password attempted
         if "password_correct" in st.session_state:
             if not st.session_state["password_correct"]:
                 st.error("❌ Incorrect password. Please try again.")
-            
-        st.info("💡 **Default Password:** admin123")
+
+        st.info("💡 **Default Password:** `admin123`")
         st.markdown('</div>', unsafe_allow_html=True)
 
     return False
 
-# Check authentication
+# 🔐 Block app execution unless authenticated
 if not check_password():
     st.stop()
+
 
 #######################################
 # NAVIGATION SETUP
