@@ -21,7 +21,7 @@ import random
 import requests
 import io
 import base64
-from streamlit_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode, GridUpdateMode, JsCode
+from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode, GridUpdateMode, JsCode
 from streamlit_calendar import calendar
 import urllib.parse
 import hashlib
