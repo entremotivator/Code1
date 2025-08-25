@@ -108,16 +108,16 @@ st.markdown("""
     
     /* Metric Cards */
     .metric-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        border: 1px solid #e2e8f0;
-        border-radius: 20px;
-        padding: 2rem;
-        margin: 1rem 0;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
+    background: linear-gradient(135deg, #000000 0%, #ffffff 100%); /* black → white */
+    border: 1px solid #ffffff; /* white border */
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15); /* soft white shadow */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
     
     .metric-card:hover {
         transform: translateY(-5px);
