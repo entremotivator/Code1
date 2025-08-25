@@ -708,7 +708,7 @@ if df is None:
     df = generate_vapi_ai_data()
     if not df.empty:
         data_source = "VAPI AI Demo Data (Comprehensive)"
-        st.info("🤖 Using comprehensive VAPI AI demo data. Configure Google Sheets for live data integration.")
+        st.info("🤖 Using comprehensive AIVACEO demo data. Configure Google Sheets for live data integration.")
     else:
         st.error("❌ No data available. Please check the data generation.")
         st.stop()
@@ -1391,7 +1391,7 @@ if st.session_state.current_page == "📊 Dashboard":
 
 
 elif st.session_state.current_page == "📈 Analytics":
-    st.markdown('<h2 class="section-header animate-fadeIn">📈 Advanced VAPI AI Analytics</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header animate-fadeIn">📈 Advanced AIVACEO Analytics</h2>', unsafe_allow_html=True)
     
     # Analytics filters
     col1, col2, col3, col4 = st.columns(4)
@@ -1753,7 +1753,7 @@ elif st.session_state.current_page == "📈 Analytics":
         st.markdown('</div>', unsafe_allow_html=True)
 
 elif st.session_state.current_page == "👥 Agents":
-    st.markdown('<h2 class="section-header animate-fadeIn">👥 VAPI AI Agent Performance</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="section-header animate-fadeIn">👥 AIVACEO Agent Performance</h2>', unsafe_allow_html=True)
     
     if 'voice_agent_name' in df.columns:
         # Agent selection
