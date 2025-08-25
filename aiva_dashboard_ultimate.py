@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🤖 VAPI AI Call Center Dashboard - Ultimate Edition
+🤖 AIVACEO Call Center Dashboard - Ultimate Edition
 Advanced AI Phone Call Center Management System
 Integrated with n8n Webhooks, Real-time Analytics, and CRM Features
 """
@@ -32,14 +32,14 @@ import hmac
 #######################################
 
 st.set_page_config(
-    page_title="🤖 VAPI AI Call Center Dashboard",
+    page_title="🤖 AIVACEO Call Center Dashboard",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://docs.vapi.ai',
-        'Report a bug': 'https://github.com/VapiAI/vapi-python',
-        'About': "VAPI AI Call Center Dashboard - Ultimate Edition with n8n Integration"
+        'Get Help': 'https://entremotivator.com',
+        'Report a bug': 'https://entremotivator.com',
+        'About': "AIVACEO Call Center Dashboard - Ultimate Edition "
     }
 )
 
@@ -384,7 +384,7 @@ nav_options = [
 # Header
 st.markdown("""
 <div class="vapi-header animate-fadeIn">
-    <h1>🤖 VAPI AI Call Center Dashboard</h1>
+    <h1>🤖 AIVACEO Call Center Dashboard</h1>
     <p>Advanced AI Phone Call Management with n8n Integration & Real-time Analytics</p>
 </div>
 """, unsafe_allow_html=True)
